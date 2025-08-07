@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { View, Text, TouchableOpacity, Image } from 'react-native';
 import { StackScreenProps } from '@react-navigation/stack';
@@ -17,7 +16,11 @@ const BienvenidaScreen = ({ navigation }: BienvenidaScreenProps) => {
       <Text style={estilos.titulo}>Bienvenido</Text>
       <Text style={estilos.subtitulo}>Calculadora de División</Text>
       
-      <Image source={{ uri: 'https://cdn-icons-png.flaticon.com/512/6399/6399478.png' }}/>
+      <Image
+        source={{ uri: 'https://cdn-icons-png.flaticon.com/512/6399/6399478.png' }}
+        style={estilos.imagen}
+        resizeMode="contain"
+      />
       
       <TouchableOpacity
         style={estilos.boton}

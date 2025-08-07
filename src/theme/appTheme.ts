@@ -1,4 +1,3 @@
-
 import { StyleSheet } from 'react-native';
 
 export const estilos = StyleSheet.create({
@@ -8,7 +7,6 @@ export const estilos = StyleSheet.create({
     justifyContent: 'center',
     padding: 20,
   },
-
 
   titulo: {
     color: '#e2c4ff',
@@ -65,4 +63,11 @@ export const estilos = StyleSheet.create({
     marginTop: 20,
   },
 
+  imagen: {
+    width: 200,
+    height: 200,
+    marginBottom: 40,
+    alignSelf: 'center',
+    tintColor: '#b388ff',
+  }
 });

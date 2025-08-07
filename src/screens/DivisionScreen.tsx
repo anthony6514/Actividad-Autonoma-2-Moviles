@@ -1,10 +1,8 @@
-
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity } from 'react-native';
-
+import { estilos } from '../theme/appTheme';
 
 const DivisionScreen = () => {
-
   const [num1, setNum1] = useState('');
   const [num2, setNum2] = useState(''); 
   const [result, setResult] = useState('');
@@ -22,28 +20,41 @@ const DivisionScreen = () => {
   };
 
   return (
-    <View>
-      <Text>Calculadora de División</Text>
+    <View style={estilos.contenedor}>
+      <Text style={estilos.titulo}>Calculadora de División</Text>
 
-      <Text>Primer número:</Text>
-      <TextInput 
-        value={num1}
-        onChangeText={setNum1}
-        keyboardType="numeric"
-      />
+      <View style={estilos.contenedorEntrada}>
+        <Text style={estilos.etiqueta}>Primer número:</Text>
+        <TextInput 
+          style={estilos.entrada}
+          value={num1}
+          onChangeText={setNum1}
+          keyboardType="numeric"
+          placeholder="Ingrese el primer número"
+          placeholderTextColor="#6a3da1"
+        />
+      </View>
 
-      <Text>Segundo número:</Text>
-      <TextInput
-        value={num2} 
-        onChangeText={setNum2}
-        keyboardType="numeric"
-      />
+      <View style={estilos.contenedorEntrada}>
+        <Text style={estilos.etiqueta}>Segundo número:</Text>
+        <TextInput
+          style={estilos.entrada}
+          value={num2} 
+          onChangeText={setNum2}
+          keyboardType="numeric"
+          placeholder="Ingrese el segundo número"
+          placeholderTextColor="#6a3da1"
+        />
+      </View>
 
-      <TouchableOpacity onPress={dividir}>
-        <Text>Calcular</Text>
+      <TouchableOpacity 
+        style={estilos.boton}
+        onPress={dividir}
+      >
+        <Text style={estilos.textoBoton}>Calcular</Text>
       </TouchableOpacity>
 
-      <Text>{result}</Text>
+      <Text style={estilos.resultado}>{result}</Text>
     </View>
   );
 };

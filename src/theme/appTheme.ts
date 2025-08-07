@@ -4,56 +4,65 @@ import { StyleSheet } from 'react-native';
 export const estilos = StyleSheet.create({
   contenedor: {
     flex: 1,
-    backgroundColor: '#1a0033',  
+    backgroundColor: '#0d011f',
     justifyContent: 'center',
+    padding: 20,
   },
 
 
   titulo: {
-    color: '#FFFFFF', 
+    color: '#e2c4ff',
+    fontSize: 28,
     fontWeight: 'bold',
     marginBottom: 30,
     textAlign: 'center',
   },
 
   subtitulo: {
-    color: '#FFFFFF',  
+    color: '#b388ff',
+    fontSize: 16,
     textAlign: 'center',
-  },
-
-  contenedorEntrada: {
     marginBottom: 20,
   },
 
+  contenedorEntrada: {
+    marginBottom: 25,
+  },
+
   etiqueta: {
-    color: '#FFFFFF',  
+    color: '#b388ff',
+    fontSize: 16,
+    marginBottom: 8,
   },
 
   entrada: {
-    backgroundColor: '#8033ff',  
-    color: '#FFFFFF',  
+    backgroundColor: '#1a0333',
+    color: '#e2c4ff',
+    padding: 12,
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: '#4a1b80',
   },
 
   boton: {
-    backgroundColor: '#9966ff', 
+    backgroundColor: '#4a1b80',
+    padding: 15,
+    borderRadius: 8,
+    alignItems: 'center',
+    marginVertical: 10,
   },
 
   textoBoton: {
-    color: '#FFFFFF',  
+    color: '#ffffff',
+    fontSize: 16,
+    fontWeight: '600',
   },
-
 
   resultado: {
-    color: '#FFFFFF',  
+    color: '#e2c4ff',
+    fontSize: 18,
     textAlign: 'center',
+    marginTop: 20,
   },
 
-  imagen: {
-    width: 200,
-    height: 200,
-    marginBottom: 40,
-    alignSelf: 'center',
-  }
-}
-)
-
+});

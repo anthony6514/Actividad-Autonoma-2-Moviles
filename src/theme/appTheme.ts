@@ -66,8 +66,6 @@ export const estilos = StyleSheet.create({
   imagen: {
     width: 200,
     height: 200,
-    marginBottom: 40,
     alignSelf: 'center',
-    tintColor: '#b388ff',
   }
 });
